@@ -1,0 +1,49 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "134fd21d_c332321b",
+        "filename": "internal/secret/secret.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-08T20:05:17Z",
+      "side": 1,
+      "message": "Call os.UserHomeDir rather than os.Getenv(\"HOME\").",
+      "fixSuggestions": [
+        {
+          "fixId": "e18235b7_b38fab43",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/secret/secret.go",
+              "range": {
+                "startLine": 12,
+                "startChar": 0,
+                "endLine": 13,
+                "endChar": 0
+              },
+              "replacement": ""
+            },
+            {
+              "path": "internal/secret/secret.go",
+              "range": {
+                "startLine": 66,
+                "startChar": 0,
+                "endLine": 67,
+                "endChar": 0
+              },
+              "replacement": "\tfile :\u003d os.UserHomeDir() + \"/.netrc\"\n"
+            }
+          ]
+        }
+      ],
+      "revId": "01551318d34e82d01f6cb9bb1e8152135c59a116",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
