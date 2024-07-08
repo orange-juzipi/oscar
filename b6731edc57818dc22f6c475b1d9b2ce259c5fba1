@@ -1,0 +1,124 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5676ae4a_e92004f6",
+        "filename": "internal/docs/docs.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-08T20:59:30Z",
+      "side": 1,
+      "message": "There doesn\u0027t seem to be a storage.Now, at least not yet.  There is a timed.now, but as that is unexported there doesn\u0027t seem much reason to refer to it here.  Maybe just \"// opaque database time when Doc was written\" .",
+      "fixSuggestions": [
+        {
+          "fixId": "773c73c8_4ca72347",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/docs/docs.go",
+              "range": {
+                "startLine": 41,
+                "startChar": 0,
+                "endLine": 42,
+                "endChar": 0
+              },
+              "replacement": "\tDBTime timed.DBTime // opaque database time when Doc was written\n"
+            }
+          ]
+        }
+      ],
+      "revId": "b6731edc57818dc22f6c475b1d9b2ce259c5fba1",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ef046af_51741a20",
+        "filename": "internal/docs/docs.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-08T20:59:30Z",
+      "side": 1,
+      "message": "Should pull the special string docs.Doc into a package-scope const.",
+      "fixSuggestions": [
+        {
+          "fixId": "686e5b3d_b18cfe90",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/docs/docs.go",
+              "range": {
+                "startLine": 19,
+                "startChar": 0,
+                "endLine": 19,
+                "endChar": 0
+              },
+              "replacement": "const (\n\tdocKey \u003d \"docs.Doc\"\n)\n\n"
+            },
+            {
+              "path": "internal/docs/docs.go",
+              "range": {
+                "startLine": 67,
+                "startChar": 0,
+                "endLine": 68,
+                "endChar": 0
+              },
+              "replacement": "\tt, ok :\u003d timed.Get(c.db, docKey, ordered.Encode(id))\n"
+            },
+            {
+              "path": "internal/docs/docs.go",
+              "range": {
+                "startLine": 84,
+                "startChar": 0,
+                "endLine": 85,
+                "endChar": 0
+              },
+              "replacement": "\ttimed.Set(c.db, b, docKey, ordered.Encode(id), ordered.Encode(title, text))\n"
+            },
+            {
+              "path": "internal/docs/docs.go",
+              "range": {
+                "startLine": 93,
+                "startChar": 0,
+                "endLine": 94,
+                "endChar": 0
+              },
+              "replacement": "\t\tfor t :\u003d range timed.Scan(c.db, docKey, ordered.Encode(prefix), ordered.Encode(prefix+\"\\xff\")) {\n"
+            },
+            {
+              "path": "internal/docs/docs.go",
+              "range": {
+                "startLine": 117,
+                "startChar": 0,
+                "endLine": 118,
+                "endChar": 0
+              },
+              "replacement": "\t\tfor t :\u003d range timed.ScanAfter(c.db, docKey, dbtime, filter) {\n"
+            },
+            {
+              "path": "internal/docs/docs.go",
+              "range": {
+                "startLine": 128,
+                "startChar": 0,
+                "endLine": 129,
+                "endChar": 0
+              },
+              "replacement": "\treturn timed.NewWatcher(c.db, name, docKey, c.decodeDoc)\n"
+            }
+          ]
+        }
+      ],
+      "revId": "b6731edc57818dc22f6c475b1d9b2ce259c5fba1",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
