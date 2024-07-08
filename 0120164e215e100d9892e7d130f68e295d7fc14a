@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0c836f96_96937778",
+        "filename": "internal/httprr/rr.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-08T21:27:17Z",
+      "side": 1,
+      "message": "Could set ContentLenth to len(body) here.  The code sets ContentLength below if there are",
+      "fixSuggestions": [
+        {
+          "fixId": "f6a0b0d8_ad5b0b59",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/httprr/rr.go",
+              "range": {
+                "startLine": 211,
+                "startChar": 0,
+                "endLine": 212,
+                "endChar": 0
+              },
+              "replacement": "\t\trkey.ContentLength \u003d int64(len(body))\n"
+            }
+          ]
+        }
+      ],
+      "revId": "0120164e215e100d9892e7d130f68e295d7fc14a",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "11b21bf5_1535a530",
+        "filename": "internal/httprr/rr.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 222,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-08T21:27:17Z",
+      "side": 1,
+      "message": "Why only set ContentLength if there are scrubbers?  Could move this condition out of the if statement.  Then no need for rkey.ContentLength \u003d -1 above.",
+      "fixSuggestions": [
+        {
+          "fixId": "4aec2bd2_c1e1424b",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/httprr/rr.go",
+              "range": {
+                "startLine": 211,
+                "startChar": 0,
+                "endLine": 212,
+                "endChar": 0
+              },
+              "replacement": ""
+            },
+            {
+              "path": "internal/httprr/rr.go",
+              "range": {
+                "startLine": 221,
+                "startChar": 0,
+                "endLine": 224,
+                "endChar": 0
+              },
+              "replacement": "\t}\n\tif rkey.Body !\u003d nil {\n\t\trkey.ContentLength \u003d int64(len(rkey.Body.(*Body).Data))\n"
+            }
+          ]
+        }
+      ],
+      "revId": "0120164e215e100d9892e7d130f68e295d7fc14a",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
