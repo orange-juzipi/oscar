@@ -4,6 +4,7 @@ go 1.23rc1
 
 require (
 	github.com/cockroachdb/pebble v1.1.1
+	golang.org/x/tools v0.6.0
 	rsc.io/omap v1.2.0
 	rsc.io/ordered v1.1.0
 	rsc.io/top v1.0.2
