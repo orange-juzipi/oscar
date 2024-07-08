@@ -7,6 +7,7 @@ require (
 	github.com/google/generative-ai-go v0.16.0
 	golang.org/x/tools v0.21.1-0.20240508182429-e35e4ccd0d2d
 	google.golang.org/api v0.186.0
+	rsc.io/markdown v0.0.0-20240617154923-1f2ef1438fed
 	rsc.io/omap v1.2.0
 	rsc.io/ordered v1.1.0
 	rsc.io/top v1.0.2
