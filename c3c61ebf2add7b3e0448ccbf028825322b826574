@@ -1,0 +1,94 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a2338542_516224e3",
+        "filename": "internal/llm/embed_test.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-08T18:51:56Z",
+      "side": 1,
+      "message": "s/bytes.Buffer/strings.Builder/",
+      "fixSuggestions": [
+        {
+          "fixId": "bcb9eb65_8bdba5be",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/llm/embed_test.go",
+              "range": {
+                "startLine": 8,
+                "startChar": 0,
+                "endLine": 9,
+                "endChar": 0
+              },
+              "replacement": ""
+            },
+            {
+              "path": "internal/llm/embed_test.go",
+              "range": {
+                "startLine": 10,
+                "startChar": 0,
+                "endLine": 10,
+                "endChar": 0
+              },
+              "replacement": "\t\"strings\"\n"
+            },
+            {
+              "path": "internal/llm/embed_test.go",
+              "range": {
+                "startLine": 25,
+                "startChar": 0,
+                "endLine": 26,
+                "endChar": 0
+              },
+              "replacement": "\t\t\tvar buf strings.Builder\n"
+            }
+          ]
+        }
+      ],
+      "revId": "c3c61ebf2add7b3e0448ccbf028825322b826574",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "646c0f74_667d8fe9",
+        "filename": "internal/llm/llm.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-08T18:51:56Z",
+      "side": 1,
+      "message": "Change link from rsc.io/gaby to golang.org/x/oscar ?",
+      "fixSuggestions": [
+        {
+          "fixId": "75686232_8ad39666",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/llm/llm.go",
+              "range": {
+                "startLine": 24,
+                "startChar": 0,
+                "endLine": 25,
+                "endChar": 0
+              },
+              "replacement": "// and see [golang.org/x/oscar/internal/gemini] for a real implementation.\n"
+            }
+          ]
+        }
+      ],
+      "revId": "c3c61ebf2add7b3e0448ccbf028825322b826574",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
