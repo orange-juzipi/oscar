@@ -1,0 +1,148 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "55dc355b_5241d3d3",
+        "filename": "go.sum",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-08T20:16:47Z",
+      "side": 1,
+      "message": "Need to run \"go mod tidy\".",
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "994bbd36_6448630f",
+        "filename": "internal/pebble/pebble.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-08T20:16:47Z",
+      "side": 1,
+      "message": "Seems like this package should document that it uses MemLocker, which implies that the Lock/Unlock DB methods won\u0027t support multiple-processes as they are expected to.",
+      "fixSuggestions": [
+        {
+          "fixId": "5e5ec111_49a3ba79",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/pebble/pebble.go",
+              "range": {
+                "startLine": 7,
+                "startChar": 0,
+                "endLine": 7,
+                "endChar": 0
+              },
+              "replacement": "//\n// Pebble is a single-process database.\n// The Lock/Unlock methods are implemented using storage.MemLocker.\n"
+            }
+          ]
+        }
+      ],
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ce74ca2_9da5e901",
+        "filename": "internal/pebble/pebble.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-08T20:16:47Z",
+      "side": 1,
+      "message": "I don\u0027t see any uses of the sync variable.",
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1e9bc0f8_8fc9b117",
+        "filename": "internal/pebble/pebble_test.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-08T20:16:47Z",
+      "side": 1,
+      "message": "filepath.Join here and below.",
+      "fixSuggestions": [
+        {
+          "fixId": "0cc827d6_728e1c89",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/pebble/pebble_test.go",
+              "range": {
+                "startLine": 11,
+                "startChar": 0,
+                "endLine": 11,
+                "endChar": 0
+              },
+              "replacement": "\t\"path/filepath\"\n"
+            },
+            {
+              "path": "internal/pebble/pebble_test.go",
+              "range": {
+                "startLine": 28,
+                "startChar": 0,
+                "endLine": 29,
+                "endChar": 0
+              },
+              "replacement": "\tdb, err :\u003d Open(lg, filepath.Join(dir, \"db1\"))\n"
+            },
+            {
+              "path": "internal/pebble/pebble_test.go",
+              "range": {
+                "startLine": 33,
+                "startChar": 0,
+                "endLine": 34,
+                "endChar": 0
+              },
+              "replacement": "\tdb, err \u003d Create(lg, filepath.Join(dir, \"db1\"))\n"
+            },
+            {
+              "path": "internal/pebble/pebble_test.go",
+              "range": {
+                "startLine": 39,
+                "startChar": 0,
+                "endLine": 40,
+                "endChar": 0
+              },
+              "replacement": "\tdb, err \u003d Create(lg, filepath.Join(dir, \"db1\"))\n"
+            },
+            {
+              "path": "internal/pebble/pebble_test.go",
+              "range": {
+                "startLine": 44,
+                "startChar": 0,
+                "endLine": 45,
+                "endChar": 0
+              },
+              "replacement": "\tdb, err \u003d Open(lg, filepath.Join(dir, \"db1\"))\n"
+            }
+          ]
+        }
+      ],
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
