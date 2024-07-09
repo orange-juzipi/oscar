@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dd8727d4_091bc5f3",
+        "filename": "internal/gemini/gemini.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:46:39Z",
+      "side": 1,
+      "message": "Are we going to regret not having a context.Context parameter in the Embedder interface?",
+      "fixSuggestions": [
+        {
+          "fixId": "ae4f4488_f709f35a",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/gemini/gemini.go",
+              "range": {
+                "startLine": 117,
+                "startChar": 0,
+                "endLine": 118,
+                "endChar": 0
+              },
+              "replacement": "func (c *Client) EmbedDocs(ctx context.Context, docs []llm.EmbedDoc) ([]llm.Vector, error) {\n"
+            },
+            {
+              "path": "internal/gemini/gemini.go",
+              "range": {
+                "startLine": 125,
+                "startChar": 0,
+                "endLine": 126,
+                "endChar": 0
+              },
+              "replacement": "\t\tresp, err :\u003d model.BatchEmbedContents(ctx, b)\n"
+            }
+          ]
+        }
+      ],
+      "revId": "56ddecffc1fd3645e3b4db38b11296d145bb46d8",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e222af71_00356a98",
+        "filename": "internal/gemini/gemini_test.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:46:39Z",
+      "side": 1,
+      "message": "I don\u0027t think most systems have this /usr/local/plan9 file.  My system does have /usr/share/dict/words.  This mainly matters because only you will be able to update the recorded file.",
+      "fixSuggestions": [
+        {
+          "fixId": "1746aebc_131eb163",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/gemini/gemini_test.go",
+              "range": {
+                "startLine": 96,
+                "startChar": 0,
+                "endLine": 97,
+                "endChar": 0
+              },
+              "replacement": "\tdata, err :\u003d os.ReadFile(\"/usr/share/dict/words\")\n"
+            }
+          ]
+        }
+      ],
+      "revId": "56ddecffc1fd3645e3b4db38b11296d145bb46d8",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
