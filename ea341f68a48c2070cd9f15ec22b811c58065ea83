@@ -44,6 +44,47 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "57cd7699_744a2ffd",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T02:48:33Z",
+      "side": 1,
+      "message": "I don\u0027t think that\u0027s a realistic assumption in a production application.\nFor example, some paths or inputs may result in DB errors, but other independent work can proceed.",
+      "range": {
+        "startLine": 28,
+        "startChar": 1,
+        "endLine": 29,
+        "endChar": 76
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "194c9bbf_29a62b2f",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/storage/db.go",
+              "range": {
+                "startLine": 28,
+                "startChar": 0,
+                "endLine": 32,
+                "endChar": 0
+              },
+              "replacement": "// The assumption is that the program cannot possibly continue\n// without the database, since that\u0027s where all the state is stored.\n// Similarly, clients of DB conventionally panic if the database returns\n// corrupted data.\n"
+            }
+          ]
+        }
+      ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "dc0b77f2_3a03c110",
         "filename": "internal/storage/db.go",
         "patchSetId": 1
@@ -73,6 +114,52 @@
           ]
         }
       ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d29e6d99_7fe09eef",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T02:48:33Z",
+      "side": 1,
+      "message": "Usually this is \"\u003c\". Why not here?",
+      "range": {
+        "startLine": 57,
+        "startChar": 71,
+        "endLine": 57,
+        "endChar": 73
+      },
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f9ae64c_0b923daa",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T02:48:33Z",
+      "side": 1,
+      "message": "By iterator convention, this should be named to describe the values provided. \"Range\" is the obvious choice, especially given `DeleteRange`, except `range Range(...)` looks weird. Maybe `Between`?",
+      "range": {
+        "startLine": 68,
+        "startChar": 1,
+        "endLine": 68,
+        "endChar": 5
+      },
       "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
@@ -446,6 +533,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2a2cf5b0_b2829c3e",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T02:48:33Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 88,
+        "startChar": 17,
+        "endLine": 88,
+        "endChar": 21
+      },
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9147ac1f_3099ec55",
         "filename": "internal/storage/mem.go",
         "patchSetId": 1
@@ -528,6 +638,29 @@
           ]
         }
       ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd595355_5b2f06c1",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 273,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T02:48:33Z",
+      "side": 1,
+      "message": "Isn\u0027t this papering over a bug?",
+      "range": {
+        "startLine": 273,
+        "startChar": 3,
+        "endLine": 273,
+        "endChar": 11
+      },
       "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
