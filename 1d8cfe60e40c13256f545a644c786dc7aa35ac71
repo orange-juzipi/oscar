@@ -108,6 +108,41 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c3de4309_67d6a4b1",
+        "filename": "internal/gaby/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 279,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T20:51:16Z",
+      "side": 1,
+      "message": "This package does not seem to exist.",
+      "fixSuggestions": [
+        {
+          "fixId": "b2a160a4_00f15672",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/gaby/main.go",
+              "range": {
+                "startLine": 279,
+                "startChar": 0,
+                "endLine": 280,
+                "endChar": 0
+              },
+              "replacement": "// [rsc.io/gerrit/reviewdb] provides a basic version that can be adapted. (This\n// package is not yet in the public repository.)\n"
+            }
+          ]
+        }
+      ],
+      "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "0d39c5c1_3c1ded81",
         "filename": "internal/gaby/main.go",
         "patchSetId": 1
