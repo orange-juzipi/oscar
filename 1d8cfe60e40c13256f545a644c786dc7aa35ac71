@@ -1,0 +1,144 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "69443785_125bacd3",
+        "filename": "internal/gaby/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T20:45:29Z",
+      "side": 1,
+      "message": "Are you still planning to move the code somewhere else?",
+      "fixSuggestions": [
+        {
+          "fixId": "f9dd3cdf_6a547c57",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/gaby/main.go",
+              "range": {
+                "startLine": 16,
+                "startChar": 0,
+                "endLine": 17,
+                "endChar": 0
+              },
+              "replacement": ""
+            }
+          ]
+        }
+      ],
+      "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4ac48ef5_1e1c513a",
+        "filename": "internal/gaby/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T20:45:29Z",
+      "side": 1,
+      "message": "Missing link?",
+      "fixSuggestions": [
+        {
+          "fixId": "3f5560f9_1900b06e",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/gaby/main.go",
+              "range": {
+                "startLine": 18,
+                "startChar": 0,
+                "endLine": 19,
+                "endChar": 0
+              },
+              "replacement": "// The [GitHub Discussion] is a good place to leave feedback about Gaby.\n"
+            }
+          ]
+        }
+      ],
+      "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a465c985_c3b16436",
+        "filename": "internal/gaby/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T20:45:29Z",
+      "side": 1,
+      "message": "s/this repo/of this repo/ ?",
+      "fixSuggestions": [
+        {
+          "fixId": "71f2ac19_b9e3fc3f",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/gaby/main.go",
+              "range": {
+                "startLine": 47,
+                "startChar": 0,
+                "endLine": 48,
+                "endChar": 0
+              },
+              "replacement": "// It is an explicit requirement of this repo to test all the code,\n"
+            }
+          ]
+        }
+      ],
+      "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0d39c5c1_3c1ded81",
+        "filename": "internal/gaby/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 409,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T20:45:29Z",
+      "side": 1,
+      "message": "Is this comment useful?",
+      "fixSuggestions": [
+        {
+          "fixId": "c86fb96d_7a31eedf",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/gaby/main.go",
+              "range": {
+                "startLine": 409,
+                "startChar": 0,
+                "endLine": 416,
+                "endChar": 0
+              },
+              "replacement": ""
+            }
+          ]
+        }
+      ],
+      "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
