@@ -36,6 +36,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7211c58a_0b5b71bc",
+        "filename": "internal/testutil/testutil.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T13:14:31Z",
+      "side": 1,
+      "message": "I think scoped to a single project (internal), it\u0027s okay. I am not sure what will end up here or not and would rather not have multiple tiny packages that each test needs to import. I think of it as \"testing++ scoped to oscar\".",
+      "parentUuid": "838f5655_02dbd84f",
+      "revId": "a3330d5af4426e4c9252176817ae683071c6a818",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "17c16d0e_627e7287",
@@ -49,6 +67,30 @@
       "writtenOn": "2024-07-08T22:55:29Z",
       "side": 1,
       "message": "remove",
+      "range": {
+        "startLine": 15,
+        "startChar": 41,
+        "endLine": 15,
+        "endChar": 48
+      },
+      "revId": "a3330d5af4426e4c9252176817ae683071c6a818",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c7bced2_3ba7b5f2",
+        "filename": "internal/testutil/testutil.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T13:14:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "17c16d0e_627e7287",
       "range": {
         "startLine": 15,
         "startChar": 41,
