@@ -1,0 +1,161 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "31df184b_f0d184fa",
+        "filename": "internal/commentfix/fix.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T15:53:07Z",
+      "side": 1,
+      "message": "Missing doc comment.",
+      "fixSuggestions": [
+        {
+          "fixId": "090d26f4_61b5ecf7",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/commentfix/fix.go",
+              "range": {
+                "startLine": 53,
+                "startChar": 0,
+                "endLine": 53,
+                "endChar": 0
+              },
+              "replacement": "// SetStderr sets the writer to which the Fixer prints diffs of its edits.\n// By default, the Fixer prints diffs to standard error.\n"
+            }
+          ]
+        }
+      ],
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c47a6957_8d203830",
+        "filename": "internal/commentfix/fix.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T15:53:07Z",
+      "side": 1,
+      "message": "Maybe mention the EnableEdits method here.",
+      "fixSuggestions": [
+        {
+          "fixId": "3ea5f420_111b0e7f",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/commentfix/fix.go",
+              "range": {
+                "startLine": 64,
+                "startChar": 0,
+                "endLine": 65,
+                "endChar": 0
+              },
+              "replacement": "// [Fixer.Run] will panic. If gh is non-nil, [Fixer.EnableEdits] must be\n// called before [Fixer.Run].\n"
+            }
+          ]
+        }
+      ],
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae741742_02248f8f",
+        "filename": "internal/commentfix/fix.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T15:53:07Z",
+      "side": 1,
+      "message": "Skip the append if start \u003d\u003d len(text) ?",
+      "fixSuggestions": [
+        {
+          "fixId": "1c0ce99c_09e2bfb4",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/commentfix/fix.go",
+              "range": {
+                "startLine": 160,
+                "startChar": 0,
+                "endLine": 161,
+                "endChar": 0
+              },
+              "replacement": "\t\tif start \u003c len(text) {\n\t\t\tout \u003d append(out, \u0026markdown.Plain{Text: text[start:]})\n\t\t}\n"
+            }
+          ]
+        }
+      ],
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e83635c1_61e233ca",
+        "filename": "internal/commentfix/fix.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 252,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T15:53:07Z",
+      "side": 1,
+      "message": "Document that the 30 day limit can be changed using SetTimeLimit.",
+      "fixSuggestions": [
+        {
+          "fixId": "15ef25f8_ebd16f57",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/commentfix/fix.go",
+              "range": {
+                "startLine": 252,
+                "startChar": 0,
+                "endLine": 253,
+                "endChar": 0
+              },
+              "replacement": "// Run ignores issues texts and comments more than 30 days old,\n// but this limit can be changed with [Fixer.SetTimeLimit].\n"
+            }
+          ]
+        }
+      ],
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2a5e89e0_7c1fd924",
+        "filename": "internal/commentfix/testdata/rsctmpfix.httprr",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T15:53:07Z",
+      "side": 1,
+      "message": "Maybe I missed it but I don\u0027t see anything that uses this file.",
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
