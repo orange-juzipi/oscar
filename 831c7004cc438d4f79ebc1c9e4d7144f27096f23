@@ -1,0 +1,68 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0ae82413_f58c2456",
+        "filename": "internal/storage/timed/timed.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 335,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T21:45:45Z",
+      "side": 1,
+      "message": "cannot",
+      "range": {
+        "startLine": 335,
+        "startChar": 16,
+        "endLine": 335,
+        "endChar": 22
+      },
+      "revId": "831c7004cc438d4f79ebc1c9e4d7144f27096f23",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "82c07f3d_7d0c9510",
+        "filename": "internal/storage/timed/timed.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 375,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T21:45:45Z",
+      "side": 1,
+      "message": "\"should only\" or \"must only\"\n(it need not be called during an iteration)",
+      "range": {
+        "startLine": 375,
+        "startChar": 11,
+        "endLine": 375,
+        "endChar": 15
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "adb564b5_27653dfa",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/storage/timed/timed.go",
+              "range": {
+                "startLine": 375,
+                "startChar": 0,
+                "endLine": 376,
+                "endChar": 0
+              },
+              "replacement": "// MarkOld should only be called during an iteration over Recent,\n"
+            }
+          ]
+        }
+      ],
+      "revId": "831c7004cc438d4f79ebc1c9e4d7144f27096f23",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
