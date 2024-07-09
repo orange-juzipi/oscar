@@ -36,6 +36,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ffbc0485_98be6c73",
+        "filename": "internal/httprr/rr.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:32:39Z",
+      "side": 1,
+      "message": "Deleted as suggested below.",
+      "parentUuid": "0c836f96_96937778",
+      "revId": "0120164e215e100d9892e7d130f68e295d7fc14a",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "11b21bf5_1535a530",
@@ -77,6 +95,24 @@
           ]
         }
       ],
+      "revId": "0120164e215e100d9892e7d130f68e295d7fc14a",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "450032c8_6bce1cb7",
+        "filename": "internal/httprr/rr.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 222,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:32:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "11b21bf5_1535a530",
       "revId": "0120164e215e100d9892e7d130f68e295d7fc14a",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
