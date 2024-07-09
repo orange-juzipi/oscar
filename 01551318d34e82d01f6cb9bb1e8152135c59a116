@@ -44,6 +44,24 @@
       ],
       "revId": "01551318d34e82d01f6cb9bb1e8152135c59a116",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d6024fe_fbd7115f",
+        "filename": "internal/secret/secret.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "134fd21d_c332321b",
+      "revId": "01551318d34e82d01f6cb9bb1e8152135c59a116",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
