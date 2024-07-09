@@ -1,0 +1,86 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c60543eb_6d2210b6",
+        "filename": "internal/storage/timed/timed.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T21:07:31Z",
+      "side": 1,
+      "message": "accommodate",
+      "range": {
+        "startLine": 35,
+        "startChar": 19,
+        "endLine": 35,
+        "endChar": 29
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "c02af62b_394fcfa0",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/storage/timed/timed.go",
+              "range": {
+                "startLine": 35,
+                "startChar": 0,
+                "endLine": 36,
+                "endChar": 0
+              },
+              "replacement": "// but modified to accommodate the new entries:\n"
+            }
+          ]
+        }
+      ],
+      "revId": "6c1f50a9339270d3143745a867c1f1d870581512",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22989eb5_68375c12",
+        "filename": "internal/storage/timed/timed.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T21:07:31Z",
+      "side": 1,
+      "message": "Oscar, or better, \"the program\" (since this is fully general)",
+      "range": {
+        "startLine": 84,
+        "startChar": 14,
+        "endLine": 84,
+        "endChar": 18
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "e38002f9_a1862d51",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/storage/timed/timed.go",
+              "range": {
+                "startLine": 84,
+                "startChar": 0,
+                "endLine": 85,
+                "endChar": 0
+              },
+              "replacement": "// so that if the program is restarted, the new instance will not see times before\n"
+            }
+          ]
+        }
+      ],
+      "revId": "6c1f50a9339270d3143745a867c1f1d870581512",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
