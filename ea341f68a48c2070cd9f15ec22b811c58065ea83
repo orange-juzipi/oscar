@@ -3,6 +3,47 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2177a1dc_09783e8f",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T02:15:40Z",
+      "side": 1,
+      "message": "Oscar",
+      "range": {
+        "startLine": 5,
+        "startChar": 63,
+        "endLine": 5,
+        "endChar": 67
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "89b87c51_dab47434",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/storage/db.go",
+              "range": {
+                "startLine": 5,
+                "startChar": 0,
+                "endLine": 6,
+                "endChar": 0
+              },
+              "replacement": "// Package storage defines the storage abstractions needed for Oscar:\n"
+            }
+          ]
+        }
+      ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "dc0b77f2_3a03c110",
         "filename": "internal/storage/db.go",
         "patchSetId": 1
@@ -108,6 +149,41 @@
                 "endChar": 0
               },
               "replacement": "\t// Close closes the database, flushing any pending changes.\n"
+            }
+          ]
+        }
+      ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "69d1483c_05986e46",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T02:15:40Z",
+      "side": 1,
+      "message": "have been",
+      "fixSuggestions": [
+        {
+          "fixId": "25d49f94_0ac92ccd",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/storage/db.go",
+              "range": {
+                "startLine": 96,
+                "startChar": 0,
+                "endLine": 97,
+                "endChar": 0
+              },
+              "replacement": "\t// database-related “can\u0027t happen” conditions have been detected.\n"
             }
           ]
         }
@@ -253,6 +329,88 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "22276470_06369d9f",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T02:15:40Z",
+      "side": 1,
+      "message": "a",
+      "range": {
+        "startLine": 21,
+        "startChar": 18,
+        "endLine": 21,
+        "endChar": 20
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "63f33a81_adc02efe",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/storage/mem.go",
+              "range": {
+                "startLine": 21,
+                "startChar": 0,
+                "endLine": 22,
+                "endChar": 0
+              },
+              "replacement": "// A MemLocker is a single-process implementation\n"
+            }
+          ]
+        }
+      ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5b150db1_60513c4b",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T02:15:40Z",
+      "side": 1,
+      "message": "\"A zero MemLocker is ready for use\"?",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 22
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "36bc0fa6_6bb776ce",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/storage/mem.go",
+              "range": {
+                "startLine": 24,
+                "startChar": 0,
+                "endLine": 25,
+                "endChar": 0
+              },
+              "replacement": "// database at a time. A zero MemLocker is ready for use.\n"
+            }
+          ]
+        }
+      ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "32c28fc1_8de4ce11",
         "filename": "internal/storage/mem.go",
         "patchSetId": 1
@@ -317,6 +475,24 @@
           ]
         }
       ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "580cbbe8_69a2f319",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T02:15:40Z",
+      "side": 1,
+      "message": "I think the math is:\n\n    true score \u003d sum over i of v[i]*w[i]\n\nAssuming the max that a value can be off by is e, the score with the largest difference is \n\n       sum over i of (v[i]+e) * (w[i]+e)\n    \u003d  sum over i of (v[i]*w[i] + (v[i]+w[i])*e + e*e)\n \nThe first term of the sum is the true score.\nThe last involves e^2, which is very small so it can be neglected.\nThe middle term is\n\n      sum over i of (v[i]+w[i])*e\n    \u003d e * (sum over i of v[i] + w[i])\n\nAssuming these are unit vectors of dimension N,\n\n    sum over i of v[i] \u003c\u003d sqrt(N)\n    \nby an application of Cauchy\u0027s inequality.\n\nSo the middle term, which is the approximate total error, is 2*sqrt(N)*e.\n\nIf N \u003d 768, that gives us 55.4e. (not sure why you have 54).\n\nAn int16 provides 2^15 values to quantize a number between 0 and 1, and 54*(1/2^15) \u003d 0.001647...\n\nBut if there are 2^15 quanta, wouldn\u0027t the maximum distance to one of them be half of that?\n\nAnd why not use uint16 and get another factor of 2?",
+      "parentUuid": "9147ac1f_3099ec55",
       "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
