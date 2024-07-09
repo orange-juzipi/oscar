@@ -46,6 +46,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4bfc43d8_94880c4e",
+        "filename": "internal/gemini/gemini.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T20:26:06Z",
+      "side": 1,
+      "message": "Possibly. Added.",
+      "parentUuid": "dd8727d4_091bc5f3",
+      "revId": "56ddecffc1fd3645e3b4db38b11296d145bb46d8",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e222af71_00356a98",
@@ -77,6 +95,24 @@
           ]
         }
       ],
+      "revId": "56ddecffc1fd3645e3b4db38b11296d145bb46d8",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "16498857_2d8c0f52",
+        "filename": "internal/gemini/gemini_test.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T20:26:06Z",
+      "side": 1,
+      "message": "Indeed, not sure what I was thinking. Fixed by generating word0, word1, word2, word3, ...",
+      "parentUuid": "e222af71_00356a98",
       "revId": "56ddecffc1fd3645e3b4db38b11296d145bb46d8",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
