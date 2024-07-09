@@ -1,0 +1,834 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "12d9f52f_de5f8684",
+        "filename": "internal/github/data.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "This comment should have an example URL.",
+      "fixSuggestions": [
+        {
+          "fixId": "a9631787_59331b5d",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 22,
+                "startChar": 0,
+                "endLine": 22,
+                "endChar": 0
+              },
+              "replacement": "// For example, \"https://github.com/golang/go/issues/50000\".\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "34ec34c3_943caed8",
+        "filename": "internal/github/data.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "This code looks like\n\n    proj, num, ok :\u003d strings.Cut(proj, \"/issues/\")\n    if !ok {\n        return bad()\n    }",
+      "fixSuggestions": [
+        {
+          "fixId": "6d91dcea_2b467ded",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 30,
+                "startChar": 0,
+                "endLine": 32,
+                "endChar": 0
+              },
+              "replacement": "\tproj, num, ok :\u003d strings.Cut(proj, \"/issues/\")\n\tif !ok {\n"
+            },
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 34,
+                "startChar": 0,
+                "endLine": 35,
+                "endChar": 0
+              },
+              "replacement": ""
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4aec18f6_5a90dd7e",
+        "filename": "internal/github/data.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "The string githubdl.Event should probably be a named const.",
+      "fixSuggestions": [
+        {
+          "fixId": "cd73d3ec_1d5ca466",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 20,
+                "startChar": 0,
+                "endLine": 20,
+                "endChar": 0
+              },
+              "replacement": "const eventTable \u003d \"githubdl.Event\"\n\n"
+            },
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 73,
+                "startChar": 0,
+                "endLine": 74,
+                "endChar": 0
+              },
+              "replacement": "\t\tfor t :\u003d range timed.Scan(c.db, eventTable, start, end) {\n"
+            },
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 99,
+                "startChar": 0,
+                "endLine": 100,
+                "endChar": 0
+              },
+              "replacement": "\t\tfor e :\u003d range timed.ScanAfter(c.db, eventTable, t, filter) {\n"
+            },
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 140,
+                "startChar": 0,
+                "endLine": 141,
+                "endChar": 0
+              },
+              "replacement": "\treturn timed.NewWatcher(c.db, name, eventTable, c.decodeEvent)\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "920e16dd_f3f58342",
+        "filename": "internal/github/data.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "Why doesn\u0027t this field, and the similar fields below, need a json struct tag?",
+      "fixSuggestions": [
+        {
+          "fixId": "7c52ec05_15d42611",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 163,
+                "startChar": 0,
+                "endLine": 164,
+                "endChar": 0
+              },
+              "replacement": "\tLogin string `json:\"login\"`\n"
+            },
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 168,
+                "startChar": 0,
+                "endLine": 169,
+                "endChar": 0
+              },
+              "replacement": "\tName string `json:\"name\"`\n"
+            },
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 173,
+                "startChar": 0,
+                "endLine": 174,
+                "endChar": 0
+              },
+              "replacement": "\tTitle string `json:\"title\"`\n"
+            },
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 178,
+                "startChar": 0,
+                "endLine": 180,
+                "endChar": 0
+              },
+              "replacement": "\tFrom string `json:\"from\"`\n\tTo   string `json:\"to\"`\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de1de8fb_89dc4da0",
+        "filename": "internal/github/data.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "Why no json struct tag for the Locked field?",
+      "fixSuggestions": [
+        {
+          "fixId": "80a59582_e027f8ab",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/data.go",
+              "range": {
+                "startLine": 250,
+                "startChar": 0,
+                "endLine": 251,
+                "endChar": 0
+              },
+              "replacement": "\tLocked           bool      `json:\"locked\"`\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e10301f5_f43c4aea",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "Why export this function?  Package github seems a funny place to put this function if it is used by another package.",
+      "fixSuggestions": [
+        {
+          "fixId": "03e02569_feb609f1",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 62,
+                "startChar": 0,
+                "endLine": 69,
+                "endChar": 0
+              },
+              "replacement": ""
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1508fc94_9ce62607",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "Use a named const for githubdl.ProjectSync.",
+      "fixSuggestions": [
+        {
+          "fixId": "1c089b02_659345b9",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 60,
+                "startChar": 0,
+                "endLine": 60,
+                "endChar": 0
+              },
+              "replacement": "const (\n\tprojectSyncKey \u003d \"githubdl.ProjectSync\"\n\teventKey       \u003d \"githubdl.Event\"\n\teventByTimeKey \u003d \"githubdl.EventByTime\"\n)\n\n"
+            },
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 114,
+                "startChar": 0,
+                "endLine": 115,
+                "endChar": 0
+              },
+              "replacement": "\tdb.Set(o(projectSyncKey, proj.Name), storage.JSON(proj))\n"
+            },
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 124,
+                "startChar": 0,
+                "endLine": 125,
+                "endChar": 0
+              },
+              "replacement": "\tkey :\u003d o(projectSyncKey, project)\n"
+            },
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 135,
+                "startChar": 0,
+                "endLine": 136,
+                "endChar": 0
+              },
+              "replacement": "\tfor key, _ :\u003d range c.db.Scan(o(projectSyncKey), o(projectSyncKey, ordered.Inf)) {\n"
+            },
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 164,
+                "startChar": 0,
+                "endLine": 165,
+                "endChar": 0
+              },
+              "replacement": "\tkey :\u003d o(projectSyncKey, project)\n"
+            },
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 206,
+                "startChar": 0,
+                "endLine": 207,
+                "endChar": 0
+              },
+              "replacement": "\t\tfor key, _ :\u003d range c.db.Scan(o(eventKey, project), o(eventKey, project, ordered.Inf)) {\n"
+            },
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 464,
+                "startChar": 0,
+                "endLine": 465,
+                "endChar": 0
+              },
+              "replacement": "\ttimed.Set(c.db, b, eventKey, o(project, issue, api, id), o(ordered.Raw(raw)))\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1dabf022_5321df76",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "This is package github, not githubdl; should this say githubdl here?",
+      "fixSuggestions": [
+        {
+          "fixId": "a1baf902_9483f9f5",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 157,
+                "startChar": 0,
+                "endLine": 158,
+                "endChar": 0
+              },
+              "replacement": "\tc.slog.Debug(\"github.SyncProject\", \"project\", project)\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0779081c_d81d6b19",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 292,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "The URL field doesn\u0027t have a json struct tag and doesn\u0027t seem to be used.",
+      "fixSuggestions": [
+        {
+          "fixId": "c4d32c03_e08472e3",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 292,
+                "startChar": 0,
+                "endLine": 293,
+                "endChar": 0
+              },
+              "replacement": ""
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "82e49c0f_2e1b25ab",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 368,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "syncIssueEvents does not take db or hc arguments.\n\nSimilarly several lines down in this comment, twice.",
+      "fixSuggestions": [
+        {
+          "fixId": "63fc6de2_bdf76c38",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 368,
+                "startChar": 0,
+                "endLine": 369,
+                "endChar": 0
+              },
+              "replacement": "//   - syncIssueEvents(proj, 0, true) to set EventID and EventETag\n"
+            },
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 374,
+                "startChar": 0,
+                "endLine": 375,
+                "endChar": 0
+              },
+              "replacement": "//   - syncIssueEvents(proj, issue, false) for every issue found by syncIssues.\n"
+            },
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 379,
+                "startChar": 0,
+                "endLine": 380,
+                "endChar": 0
+              },
+              "replacement": "//   - syncIssueEvents(proj, 0, false) to read any events since the beginning of the sync.\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7f086e9_ca13f302",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 420,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "Why no json tags on Issue or Issue.Number?",
+      "fixSuggestions": [
+        {
+          "fixId": "10253375_e7622b39",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 421,
+                "startChar": 0,
+                "endLine": 422,
+                "endChar": 0
+              },
+              "replacement": "\t\t\t\t\tNumber int64 `json:\"number\"`\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5095d048_0199da48",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 510,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "s/ioutil/io/",
+      "fixSuggestions": [
+        {
+          "fixId": "32a828d1_1ea40ef1",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 43,
+                "startChar": 0,
+                "endLine": 44,
+                "endChar": 0
+              },
+              "replacement": "\t\"io\"\n"
+            },
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 510,
+                "startChar": 0,
+                "endLine": 511,
+                "endChar": 0
+              },
+              "replacement": "\tdata, err :\u003d io.ReadAll(resp.Body)\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "36e5680c_bebaa421",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 515,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "Use http.StatusOK and http.StatusNotModified ?  Similarly below for StatusInternalServerError and StatusBadGateway.",
+      "fixSuggestions": [
+        {
+          "fixId": "064e9d0e_efdf4835",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 515,
+                "startChar": 0,
+                "endLine": 517,
+                "endChar": 0
+              },
+              "replacement": "\tif resp.StatusCode !\u003d http.StatusOK {\n\t\tif resp.StatusCode \u003d\u003d http.StatusNotModified {\n"
+            },
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 525,
+                "startChar": 0,
+                "endLine": 526,
+                "endChar": 0
+              },
+              "replacement": "\t\tif resp.StatusCode \u003d\u003d http.StatusInternalServerError || resp.StatusCode \u003d\u003d http.StatusBadGateway {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "164a88cf_8ae1a470",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 564,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "Perhaps the comment should show a sample Link header value.",
+      "fixSuggestions": [
+        {
+          "fixId": "54d0a02d_e87db2cd",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 563,
+                "startChar": 0,
+                "endLine": 564,
+                "endChar": 0
+              },
+              "replacement": "// findNext finds the \"next\" URL in the Link header value. The Link header\n// value is a comma-separated list of URLs, each of which is a \u003cURL\u003e; rel\u003d\"...\"\n// pair. findNext returns the first URL with rel\u003d\"next\".\n//\n// For example, findNext(\"\u003chttps://api.github.com/repos/golang/go/issues?page\u003d2\u003e;\n// rel\u003d\"next\", \u003chttps://api.github.com/repos/golang/go/issues?page\u003d1\u003e; rel\u003d\"prev\"\u003e\")\n// returns \"\u003chttps://api.github.com/repos/golang/go/issues?page\u003d2\u003e; rel\u003d\"next\".\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4ea9df54_ea3867b5",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 604,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "http.StatusForbidden",
+      "fixSuggestions": [
+        {
+          "fixId": "30d125c5_f8593a0f",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 604,
+                "startChar": 0,
+                "endLine": 605,
+                "endChar": 0
+              },
+              "replacement": "\tif resp.StatusCode !\u003d http.StatusForbidden || resp.Header.Get(\"X-Ratelimit-Remaining\") !\u003d \"0\" {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "52b7c98d_3d159aa9",
+        "filename": "internal/github/sync_test.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "Is this function used anywhere?",
+      "fixSuggestions": [
+        {
+          "fixId": "7cbfd1ff_c91553d9",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync_test.go",
+              "range": {
+                "startLine": 13,
+                "startChar": 0,
+                "endLine": 14,
+                "endChar": 0
+              },
+              "replacement": ""
+            },
+            {
+              "path": "internal/github/sync_test.go",
+              "range": {
+                "startLine": 15,
+                "startChar": 0,
+                "endLine": 16,
+                "endChar": 0
+              },
+              "replacement": ""
+            },
+            {
+              "path": "internal/github/sync_test.go",
+              "range": {
+                "startLine": 25,
+                "startChar": 0,
+                "endLine": 39,
+                "endChar": 0
+              },
+              "replacement": ""
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc8496bc_da8eb786",
+        "filename": "internal/github/testing.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "This is not what I see in the code: it allocates a new TestingClient each time.\n\nI do see that the test info is stored with the Client; maybe we could say that here somehow.",
+      "fixSuggestions": [
+        {
+          "fixId": "32515238_d2bea7da",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/testing.go",
+              "range": {
+                "startLine": 28,
+                "startChar": 0,
+                "endLine": 29,
+                "endChar": 0
+              },
+              "replacement": "// Each Client has only one TestingClient associated with it.\n// Every call to Testing returns the same TestingClient.\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2819d6af_db0fb536",
+        "filename": "internal/github/testing.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 205,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:33:49Z",
+      "side": 1,
+      "message": "Should this now refer to golang.org/x/oscar rather than rsc.io?\n\nSimilarly below.",
+      "fixSuggestions": [
+        {
+          "fixId": "e470e3c7_f1c74896",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/testing.go",
+              "range": {
+                "startLine": 205,
+                "startChar": 0,
+                "endLine": 206,
+                "endChar": 0
+              },
+              "replacement": "// and contain an issue history in the format printed by the [golang.org/x/oscar/issue] command.\n"
+            },
+            {
+              "path": "internal/github/testing.go",
+              "range": {
+                "startLine": 210,
+                "startChar": 0,
+                "endLine": 211,
+                "endChar": 0
+              },
+              "replacement": "//\tgo install golang.org/x/oscar/issue@latest\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
