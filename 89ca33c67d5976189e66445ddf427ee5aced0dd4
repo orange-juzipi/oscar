@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e409c122_a5aa813e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:38:16Z",
+      "side": 1,
+      "message": "(I asked Carlos to re-limit the builder to linux/windows/darwin-amd64.)",
+      "revId": "89ca33c67d5976189e66445ddf427ee5aced0dd4",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
