@@ -3,6 +3,41 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b588ea2b_1d46a1dd",
+        "filename": "internal/related/related.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T20:46:25Z",
+      "side": 1,
+      "message": "Is this comment still relevant?",
+      "fixSuggestions": [
+        {
+          "fixId": "06e4e695_6b5d8962",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/related/related.go",
+              "range": {
+                "startLine": 5,
+                "startChar": 0,
+                "endLine": 14,
+                "endChar": 0
+              },
+              "replacement": ""
+            }
+          ]
+        }
+      ],
+      "revId": "2afe7d8a6625400a0392a1c373ea31d729834cc9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4b27172d_4af04334",
         "filename": "internal/related/related.go",
         "patchSetId": 1
