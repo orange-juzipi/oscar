@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4b27172d_4af04334",
+        "filename": "internal/related/related.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T19:08:59Z",
+      "side": 1,
+      "message": "s/every//",
+      "revId": "2afe7d8a6625400a0392a1c373ea31d729834cc9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dc2039ee_0c3e5ecc",
+        "filename": "internal/related/related.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 225,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T19:08:59Z",
+      "side": 1,
+      "message": "s/bytes.Buffer/strings.Builder/",
+      "fixSuggestions": [
+        {
+          "fixId": "63e3bd50_473ca4d1",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/related/related.go",
+              "range": {
+                "startLine": 225,
+                "startChar": 0,
+                "endLine": 227,
+                "endChar": 0
+              },
+              "replacement": "\t\tvar comment bytes.Buffer\n\t\tfmt.Fprintf(\u0026comment, \"**Related Issues**\\n\\n\")\n"
+            },
+            {
+              "path": "internal/related/related.go",
+              "range": {
+                "startLine": 239,
+                "startChar": 0,
+                "endLine": 240,
+                "endChar": 0
+              },
+              "replacement": "\t\t\tfmt.Fprintf(\u0026comment, \" - [%s%s](%s) \u003c!-- score\u003d%.5f --\u003e\\n\", markdownEscape(title), info, r.ID, r.Score)\n"
+            },
+            {
+              "path": "internal/related/related.go",
+              "range": {
+                "startLine": 241,
+                "startChar": 0,
+                "endLine": 242,
+                "endChar": 0
+              },
+              "replacement": "\t\tfmt.Fprintf(\u0026comment, \"\\n\u003csub\u003e(Emoji vote if this was helpful or unhelpful; more detailed feedback welcome in [this discussion](https://github.com/golang/go/discussions/67901).)\u003c/sub\u003e\\n\")\n"
+            },
+            {
+              "path": "internal/related/related.go",
+              "range": {
+                "startLine": 243,
+                "startChar": 0,
+                "endLine": 244,
+                "endChar": 0
+              },
+              "replacement": "\t\tp.slog.Info(\"related.Poster post\", \"name\", p.name, \"project\", e.Project, \"issue\", e.Issue, \"comment\", comment.String())\n"
+            },
+            {
+              "path": "internal/related/related.go",
+              "range": {
+                "startLine": 249,
+                "startChar": 0,
+                "endLine": 250,
+                "endChar": 0
+              },
+              "replacement": "\t\tif err :\u003d p.github.PostIssueComment(issue, \u0026github.IssueCommentChanges{Body: comment.String()}); err !\u003d nil {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "2afe7d8a6625400a0392a1c373ea31d729834cc9",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
