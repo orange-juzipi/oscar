@@ -1,0 +1,74 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "07f8fe4c_0ae230bd",
+        "filename": "internal/embeddocs/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:51:48Z",
+      "side": 1,
+      "message": "Should this be using vdb.Batch()?",
+      "fixSuggestions": [
+        {
+          "fixId": "9c43d927_706477e1",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/embeddocs/sync.go",
+              "range": {
+                "startLine": 41,
+                "startChar": 0,
+                "endLine": 43,
+                "endChar": 0
+              },
+              "replacement": "\t\tif err :\u003d vdb.Batch(func(b storage.Batch) error {\n\t\t\tfor i, v :\u003d range vecs {\n\t\t\t\tb.Set(ids[i], v)\n\t\t\t}\n\t\t\treturn nil\n\t\t}); err !\u003d nil {\n\t\t\tlg.Error(\"embeddocs Batch error\", \"err\", err)\n\t\t\treturn false\n"
+            }
+          ]
+        }
+      ],
+      "revId": "5fc131d2e160582c0d07dd6d58cadaeb0d421b46",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de0105c5_23876e8c",
+        "filename": "internal/embeddocs/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-09T03:51:48Z",
+      "side": 1,
+      "message": "Why the todo comment?",
+      "fixSuggestions": [
+        {
+          "fixId": "b76e1c37_5b2d3b21",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/embeddocs/sync.go",
+              "range": {
+                "startLine": 52,
+                "startChar": 0,
+                "endLine": 53,
+                "endChar": 0
+              },
+              "replacement": "\t\tvdb.Flush()\n"
+            }
+          ]
+        }
+      ],
+      "revId": "5fc131d2e160582c0d07dd6d58cadaeb0d421b46",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
