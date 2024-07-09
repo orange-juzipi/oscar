@@ -72,6 +72,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "111544be_c01244de",
+        "filename": "go.sum",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T15:32:37Z",
+      "side": 1,
+      "message": "I posted this comment in the cloud libraries chat.",
+      "parentUuid": "aca7b0a7_214b2aa9",
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "994bbd36_6448630f",
@@ -156,6 +174,29 @@
       "side": 1,
       "message": "It\u0027s true, it just seemed worth having next to noSync.",
       "parentUuid": "3ce74ca2_9da5e901",
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "55ad19df_876570fd",
+        "filename": "internal/pebble/pebble.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-09T15:32:37Z",
+      "side": 1,
+      "message": "Where does this come from?",
+      "range": {
+        "startLine": 194,
+        "startChar": 16,
+        "endLine": 194,
+        "endChar": 21
+      },
       "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
