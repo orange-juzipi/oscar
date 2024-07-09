@@ -42,6 +42,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4526e0f0_93aeb829",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2177a1dc_09783e8f",
+      "range": {
+        "startLine": 5,
+        "startChar": 63,
+        "endLine": 5,
+        "endChar": 67
+      },
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "57cd7699_744a2ffd",
@@ -83,6 +107,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "72513f1a_93f10af5",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "This may have been true in the 1990s, but I am not convinced that it remains true in modern databases like Spanner. \n\nFor our application, even partial database outages should be so incredibly rare that it\u0027s not a problem for the app to go down while we figure out what\u0027s going on. Fail-stop seems far more likely to be correct than trying to write code paths that will never execute until the very bad day where they do, and they\u0027re all wrong. And if part of the database is corrupt, why do we think the rest is okay? And so on and so on. \n\nFail-stop is easy, more robust, and should not impact availability.\n\nAs I noted in the internal/gaby/README.md, I admit that perhaps this decision is wrong. But I don\u0027t yet see a strong case that it is.",
+      "parentUuid": "57cd7699_744a2ffd",
+      "range": {
+        "startLine": 28,
+        "startChar": 1,
+        "endLine": 29,
+        "endChar": 76
+      },
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dc0b77f2_3a03c110",
@@ -118,6 +166,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c91cf249_ccbc108d",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc0b77f2_3a03c110",
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d29e6d99_7fe09eef",
@@ -141,6 +207,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "90cfaff6_a499076b",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "I went back and forth on this a few times. \nIt is reasonable to want both \u003c\u003d end and \u003c end in different situations. \nIf you provide Scan with \u003c\u003d end, then it is easy to stop early to get \u003c end.\nIf you provide Scan with \u003c end, then it is less easy to do \"one extra step\".\n\nOf course, with DeleteRange the reverse considerations apply, \nso that balances the choices pretty much exactly.\n\nThe vast majority of the time in this code base, it doesn\u0027t matter, because the\nend key ends in an ordered infinity that is expected not to be in the database.\n\nThe current interface matches the operations in rsc.io/omap.\n\nI\u0027d rather not change them now.\nIf we decide to bring rsc.io/omap into the standard library as an ordered map,\nwe can revisit that API decision.",
+      "parentUuid": "d29e6d99_7fe09eef",
+      "range": {
+        "startLine": 57,
+        "startChar": 71,
+        "endLine": 57,
+        "endChar": 73
+      },
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4f9ae64c_0b923daa",
@@ -154,6 +244,30 @@
       "writtenOn": "2024-07-09T02:48:33Z",
       "side": 1,
       "message": "By iterator convention, this should be named to describe the values provided. \"Range\" is the obvious choice, especially given `DeleteRange`, except `range Range(...)` looks weird. Maybe `Between`?",
+      "range": {
+        "startLine": 68,
+        "startChar": 1,
+        "endLine": 68,
+        "endChar": 5
+      },
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa74a258_cd6013d6",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Scan is the usual verb for the operation of reading contiguous rows from a database. I think it is okay here.\n\nBetween is a preposition, not a noun, so it doesn\u0027t fit the iterator naming either.\nIt\u0027s a little too cute, and it also (to me at least) makes it sound like it only returns key-value pairs with start \u003c key \u003c end.",
+      "parentUuid": "4f9ae64c_0b923daa",
       "range": {
         "startLine": 68,
         "startChar": 1,
@@ -209,6 +323,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "961f9839_a601246f",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Added:\n\n// A Scan may or may not observe concurrent modifications made\n// using Set, Delete, and DeleteRange.",
+      "parentUuid": "a9c3d9d1_dc3760ab",
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c9705de5_496e8537",
@@ -244,6 +376,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c21e30be_e7ad9f45",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c9705de5_496e8537",
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "69d1483c_05986e46",
@@ -275,6 +425,24 @@
           ]
         }
       ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "17d1cea5_e18e93fd",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "69d1483c_05986e46",
       "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
@@ -324,6 +492,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "90ce2c44_276fc48e",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc78bd66_9a5edcfe",
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "691f18f6_76f88ffa",
@@ -365,6 +551,24 @@
           ]
         }
       ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40547cbd_6161b42a",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "691f18f6_76f88ffa",
       "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
@@ -414,6 +618,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "de6acbc4_04406451",
+        "filename": "internal/storage/db.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 172,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Yes, it comes in handy for debug prints from other packages.",
+      "parentUuid": "d8d65568_00b19d04",
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "22276470_06369d9f",
@@ -451,6 +673,30 @@
           ]
         }
       ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d25fefc1_9acbff7d",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "22276470_06369d9f",
+      "range": {
+        "startLine": 21,
+        "startChar": 18,
+        "endLine": 21,
+        "endChar": 20
+      },
       "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
@@ -496,6 +742,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "88862976_891bd889",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5b150db1_60513c4b",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 22
+      },
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "32c28fc1_8de4ce11",
@@ -531,6 +801,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "38305e35_9a879696",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "32c28fc1_8de4ce11",
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2a2cf5b0_b2829c3e",
@@ -544,6 +832,30 @@
       "writtenOn": "2024-07-09T02:48:33Z",
       "side": 1,
       "message": "ditto",
+      "range": {
+        "startLine": 88,
+        "startChar": 17,
+        "endLine": 88,
+        "endChar": 21
+      },
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa53af83_d291186c",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "2a2cf5b0_b2829c3e",
       "range": {
         "startLine": 88,
         "startChar": 17,
@@ -607,6 +919,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2871662_e3509912",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Yes, 54e was 54*e, and it was 54 because I truncated N/sqrt(N) to 27 when I was doing my math. But you are right it is more precisely 55.4. \n\nI\u0027ve expanded the comment.",
+      "parentUuid": "580cbbe8_69a2f319",
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dc66b6f1_dc9310f9",
@@ -642,6 +972,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4469ad22_7182b256",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done in rsc.io/ordered v1.1.1.",
+      "parentUuid": "dc66b6f1_dc9310f9",
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cd595355_5b2f06c1",
@@ -655,6 +1003,30 @@
       "writtenOn": "2024-07-09T02:48:33Z",
       "side": 1,
       "message": "Isn\u0027t this papering over a bug?",
+      "range": {
+        "startLine": 273,
+        "startChar": 3,
+        "endLine": 273,
+        "endChar": 11
+      },
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5efd46ac_7045a322",
+        "filename": "internal/storage/mem.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 273,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Updated the VectorDB interface doc to say this is the behavior.\nIt doesn\u0027t really matter, and we\u0027re not going to abort the search\nfor one bad entry.",
+      "parentUuid": "cd595355_5b2f06c1",
       "range": {
         "startLine": 273,
         "startChar": 3,
@@ -696,6 +1068,24 @@
           ]
         }
       ],
+      "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb1a98c0_6c6ef67f",
+        "filename": "internal/storage/vtest.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done, although it\u0027s float32 right now so it wasn\u0027t hitting it (there\u0027s no float32 FMA apparently).",
+      "parentUuid": "9f6921b7_1f7a656d",
       "revId": "ea341f68a48c2070cd9f15ec22b811c58065ea83",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
