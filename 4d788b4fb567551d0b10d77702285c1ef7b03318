@@ -54,6 +54,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6defe822_dd9ca920",
+        "filename": "go.sum",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "I take it back. The latest cloud go.mods say a newer version of Go. The problem is that one of our deps was referring only to an older version:\n\n```\n% go mod graph | digraph somepath golang.org/x/oscar cloud.google.com/go@v0.54.0\ngolang.org/x/oscar github.com/prometheus/common@v0.32.1\ngithub.com/prometheus/common@v0.32.1 golang.org/x/oauth2@v0.0.0-20210514164344-f6687ab2804c\ngolang.org/x/oauth2@v0.0.0-20210514164344-f6687ab2804c cloud.google.com/go@v0.65.0\ncloud.google.com/go@v0.65.0 cloud.google.com/go/storage@v1.10.0\ncloud.google.com/go/storage@v1.10.0 cloud.google.com/go/bigquery@v1.8.0\ncloud.google.com/go/bigquery@v1.8.0 cloud.google.com/go/storage@v1.8.0\ncloud.google.com/go/storage@v1.8.0 cloud.google.com/go/bigquery@v1.7.0\ncloud.google.com/go/bigquery@v1.7.0 cloud.google.com/go/pubsub@v1.3.1\ncloud.google.com/go/pubsub@v1.3.1 cloud.google.com/go@v0.54.0\n% \n```\n\nI did `go get github.com/prometheus/common` to update it and those are gone.",
+      "parentUuid": "aca7b0a7_214b2aa9",
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "994bbd36_6448630f",
@@ -89,6 +107,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a3ea766_36697d15",
+        "filename": "internal/pebble/pebble.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done, by adding:\n\n// A pebble database can only be opened by one process at a time.\n\n(The pebble code enforces this.)",
+      "parentUuid": "994bbd36_6448630f",
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3ce74ca2_9da5e901",
@@ -102,6 +138,24 @@
       "writtenOn": "2024-07-08T20:16:47Z",
       "side": 1,
       "message": "I don\u0027t see any uses of the sync variable.",
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f9a01a2_67e352f1",
+        "filename": "internal/pebble/pebble.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "It\u0027s true, it just seemed worth having next to noSync.",
+      "parentUuid": "3ce74ca2_9da5e901",
       "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
@@ -177,6 +231,24 @@
           ]
         }
       ],
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a99d80e8_327cf646",
+        "filename": "internal/pebble/pebble_test.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T15:26:33Z",
+      "side": 1,
+      "message": "Done. I suppose it helps error messages. The code does work on Windows as written of course.",
+      "parentUuid": "1e9bc0f8_8fc9b117",
       "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
