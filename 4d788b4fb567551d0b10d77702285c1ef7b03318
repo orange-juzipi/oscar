@@ -18,6 +18,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "aca7b0a7_214b2aa9",
+        "filename": "go.sum",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-09T13:42:53Z",
+      "side": 1,
+      "message": "Sadly, no, this is correct.\n\nhttps://proxy.golang.org/cloud.google.com/go/@v/v0.65.0.mod refers to \nhttps://proxy.golang.org/cloud.google.com/go/storage/@v/v1.10.0.mod which refers to\nhttps://proxy.golang.org/cloud.google.com/go/@v/v0.57.0.mod which refers to\nhttps://proxy.golang.org/cloud.google.com/go/storage/@v/v1.6.0.mod ...\n\nIf they would update their go lines to say \u0027go 1.17\u0027 or later, then pruned module graphs would kick in and the go command would stop chasing down all the dependencies. (https://go.dev/doc/go1.17#go-command)",
+      "parentUuid": "55dc355b_5241d3d3",
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "994bbd36_6448630f",
