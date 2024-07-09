@@ -36,6 +36,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "60e767e0_268273e5",
+        "filename": "go.sum",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5206
+      },
+      "writtenOn": "2024-07-09T14:59:03Z",
+      "side": 1,
+      "message": "Oy.",
+      "parentUuid": "aca7b0a7_214b2aa9",
+      "revId": "4d788b4fb567551d0b10d77702285c1ef7b03318",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "994bbd36_6448630f",
