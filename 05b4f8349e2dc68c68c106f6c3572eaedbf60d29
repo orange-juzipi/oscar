@@ -34,6 +34,24 @@
       "parentUuid": "dce885fd_72e732ff",
       "revId": "05b4f8349e2dc68c68c106f6c3572eaedbf60d29",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "56b496c7_bb7d03ec",
+        "filename": "internal/gemini/gemini.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:36:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e986553c_93224cb6",
+      "revId": "05b4f8349e2dc68c68c106f6c3572eaedbf60d29",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
