@@ -36,6 +36,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a2e1e40_f608a2c8",
+        "filename": "internal/embeddocs/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:41:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "07f8fe4c_0ae230bd",
+      "revId": "5fc131d2e160582c0d07dd6d58cadaeb0d421b46",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "de0105c5_23876e8c",
@@ -67,6 +85,24 @@
           ]
         }
       ],
+      "revId": "5fc131d2e160582c0d07dd6d58cadaeb0d421b46",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c07043a7_b8753ead",
+        "filename": "internal/embeddocs/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:41:41Z",
+      "side": 1,
+      "message": "Stale, sorry. I did the todo but forgot to remove the comment.",
+      "parentUuid": "de0105c5_23876e8c",
       "revId": "5fc131d2e160582c0d07dd6d58cadaeb0d421b46",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
