@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cce2db55_e38a5cb8",
+        "filename": "internal/githubdocs/sync_test.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-10T17:45:45Z",
+      "side": 1,
+      "message": "md1",
+      "range": {
+        "startLine": 68,
+        "startChar": 8,
+        "endLine": 68,
+        "endChar": 50
+      },
+      "revId": "f09bfb52f235e5a8b9adf6046c89059290dcb4fd",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
