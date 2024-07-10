@@ -1,0 +1,173 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c477b96_15664c5e",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-10T16:01:50Z",
+      "side": 1,
+      "message": "You don\u0027t need this: errors.Join will return nil if errs \u003d\u003d nil.",
+      "range": {
+        "startLine": 151,
+        "startChar": 0,
+        "endLine": 151,
+        "endChar": 17
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "6ed5c51f_5ab9700c",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 151,
+                "startChar": 0,
+                "endLine": 155,
+                "endChar": 0
+              },
+              "replacement": "\treturn errors.Join(errs...)\n"
+            }
+          ]
+        }
+      ],
+      "revId": "c70c7145afb7caa73d62e34ea2149556c5b09e88",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "842b8873_37c896d5",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 500,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-10T16:01:50Z",
+      "side": 1,
+      "message": "GitHub suggests using a token for auth (https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api). Curious why you\u0027re using basic auth.",
+      "range": {
+        "startLine": 500,
+        "startChar": 0,
+        "endLine": 500,
+        "endChar": 40
+      },
+      "revId": "c70c7145afb7caa73d62e34ea2149556c5b09e88",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "11a7deed_05812571",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 554,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-10T16:01:50Z",
+      "side": 1,
+      "message": "n is unused",
+      "range": {
+        "startLine": 554,
+        "startChar": 6,
+        "endLine": 554,
+        "endChar": 7
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "f7e7b15d_6103a81f",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 554,
+                "startChar": 0,
+                "endLine": 555,
+                "endChar": 0
+              },
+              "replacement": "\t\tfor url !\u003d \"\" {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "c70c7145afb7caa73d62e34ea2149556c5b09e88",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "988d3731_1dfdd848",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 625,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-10T16:01:50Z",
+      "side": 1,
+      "message": "What are these lines about? Are they to catch incorrect or stale X-Ratelimit-Reset values? And why 2 minutes?",
+      "range": {
+        "startLine": 625,
+        "startChar": 18,
+        "endLine": 625,
+        "endChar": 32
+      },
+      "revId": "c70c7145afb7caa73d62e34ea2149556c5b09e88",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "82d23972_22bb9ce5",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 634,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-10T16:01:50Z",
+      "side": 1,
+      "message": "I don\u0027t understand the logic here.\nI would have expected something like t.Sub(now) + 2*time.Second.\nFor example, if t is 15 seconds in the future, this will sleep for 45s.",
+      "range": {
+        "startLine": 634,
+        "startChar": 12,
+        "endLine": 634,
+        "endChar": 23
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "de1094c9_67ba4154",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/github/sync.go",
+              "range": {
+                "startLine": 634,
+                "startChar": 0,
+                "endLine": 635,
+                "endChar": 0
+              },
+              "replacement": "\ttime.Sleep(t.Sub(now) + 1*time.Minute)\n"
+            }
+          ]
+        }
+      ],
+      "revId": "c70c7145afb7caa73d62e34ea2149556c5b09e88",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
