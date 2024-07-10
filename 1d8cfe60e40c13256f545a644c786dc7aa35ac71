@@ -36,6 +36,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "28c867be_b148f8fd",
+        "filename": "internal/gaby/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T18:10:39Z",
+      "side": 1,
+      "message": "Nope, this was the offical place. Deleted, thanks.",
+      "parentUuid": "69443785_125bacd3",
+      "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4ac48ef5_1e1c513a",
@@ -67,6 +85,24 @@
           ]
         }
       ],
+      "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb58ddf3_0ed1ac7d",
+        "filename": "internal/gaby/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T18:10:39Z",
+      "side": 1,
+      "message": "If you mean [GitHub Discussion], that target is defined at the bottom of the comment (standard Go doc syntax).\n\nIf you mean writing [@gabyhelp] instead @gabyhelp, I tend to link the first instance (a few lines earlier) and then not link subsequent instances.",
+      "parentUuid": "4ac48ef5_1e1c513a",
       "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
@@ -106,6 +142,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "af7c7aec_f92a5eb6",
+        "filename": "internal/gaby/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T18:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a465c985_c3b16436",
+      "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c3de4309_67d6a4b1",
@@ -141,6 +195,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc30f639_317f3ec5",
+        "filename": "internal/gaby/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 279,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T18:10:39Z",
+      "side": 1,
+      "message": "I completely missed that that repo was still marked private (9 years later). Published it.",
+      "parentUuid": "c3de4309_67d6a4b1",
+      "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0d39c5c1_3c1ded81",
@@ -172,6 +244,24 @@
           ]
         }
       ],
+      "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c754f785_4faa6f32",
+        "filename": "internal/gaby/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 409,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T18:10:39Z",
+      "side": 1,
+      "message": "Deleted.",
+      "parentUuid": "0d39c5c1_3c1ded81",
       "revId": "1d8cfe60e40c13256f545a644c786dc7aa35ac71",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
