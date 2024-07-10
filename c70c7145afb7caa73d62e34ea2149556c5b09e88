@@ -42,6 +42,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0cb9b902_d0cf33f7",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:33:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9c477b96_15664c5e",
+      "range": {
+        "startLine": 151,
+        "startChar": 0,
+        "endLine": 151,
+        "endChar": 17
+      },
+      "revId": "c70c7145afb7caa73d62e34ea2149556c5b09e88",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "842b8873_37c896d5",
@@ -55,6 +79,30 @@
       "writtenOn": "2024-07-10T16:01:50Z",
       "side": 1,
       "message": "GitHub suggests using a token for auth (https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api). Curious why you\u0027re using basic auth.",
+      "range": {
+        "startLine": 500,
+        "startChar": 0,
+        "endLine": 500,
+        "endChar": 40
+      },
+      "revId": "c70c7145afb7caa73d62e34ea2149556c5b09e88",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "619b337c_10a46d72",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 500,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:33:00Z",
+      "side": 1,
+      "message": "GitHub supports passing the token both using Bearer auth and using Basic auth with the token as the password. I was doing the latter because that\u0027s what worked when I wrote the original version of this code many many years ago. I\u0027ve updated it to use Bearer instead.",
+      "parentUuid": "842b8873_37c896d5",
       "range": {
         "startLine": 500,
         "startChar": 0,
@@ -106,6 +154,30 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c69adfaf_55535dc9",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 554,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:33:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "11a7deed_05812571",
+      "range": {
+        "startLine": 554,
+        "startChar": 6,
+        "endLine": 554,
+        "endChar": 7
+      },
+      "revId": "c70c7145afb7caa73d62e34ea2149556c5b09e88",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "988d3731_1dfdd848",
@@ -119,6 +191,30 @@
       "writtenOn": "2024-07-10T16:01:50Z",
       "side": 1,
       "message": "What are these lines about? Are they to catch incorrect or stale X-Ratelimit-Reset values? And why 2 minutes?",
+      "range": {
+        "startLine": 625,
+        "startChar": 18,
+        "endLine": 625,
+        "endChar": 32
+      },
+      "revId": "c70c7145afb7caa73d62e34ea2149556c5b09e88",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a844045_a64fb41d",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 625,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:33:00Z",
+      "side": 1,
+      "message": "This was mainly about not infinite looping if you run over an HTTP trace with a rate limit response in the past. Commented and rewrote.",
+      "parentUuid": "988d3731_1dfdd848",
       "range": {
         "startLine": 625,
         "startChar": 18,
@@ -166,6 +262,30 @@
           ]
         }
       ],
+      "revId": "c70c7145afb7caa73d62e34ea2149556c5b09e88",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b57e266a_e300a0da",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 634,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:33:00Z",
+      "side": 1,
+      "message": "Indeed, that was backward. The +1m is just to make sure to wait a little bit longer to be sure the rate limit has expired. (These are per-hour rate limits so it\u0027s not a big deal to wait an extra minute.)",
+      "parentUuid": "82d23972_22bb9ce5",
+      "range": {
+        "startLine": 634,
+        "startChar": 12,
+        "endLine": 634,
+        "endChar": 23
+      },
       "revId": "c70c7145afb7caa73d62e34ea2149556c5b09e88",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }

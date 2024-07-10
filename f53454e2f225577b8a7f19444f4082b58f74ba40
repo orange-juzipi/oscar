@@ -555,6 +555,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "372f0d89_7b02bc59",
+        "filename": "internal/github/sync.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:33:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "75a62052_1921ba26",
+      "revId": "f53454e2f225577b8a7f19444f4082b58f74ba40",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0779081c_d81d6b19",
