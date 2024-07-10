@@ -1,0 +1,66 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7ba4f037_34cb8a64",
+        "filename": "internal/storage/timed/c.out",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-10T02:11:36Z",
+      "side": 1,
+      "message": "Did you mean to include this file in the CL?",
+      "revId": "d5795f3c3defed640555c202d26b6cc105fda115",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b9ab569c_702fc6c0",
+        "filename": "internal/storage/timed/timed_test.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 34895
+      },
+      "writtenOn": "2024-07-10T02:11:36Z",
+      "side": 1,
+      "message": "Could use bytes.HasSuffix to avoid converting key to string.",
+      "fixSuggestions": [
+        {
+          "fixId": "cbcd2fba_e0466f97",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/storage/timed/timed_test.go",
+              "range": {
+                "startLine": 8,
+                "startChar": 0,
+                "endLine": 8,
+                "endChar": 0
+              },
+              "replacement": "\t\"bytes\"\n"
+            },
+            {
+              "path": "internal/storage/timed/timed_test.go",
+              "range": {
+                "startLine": 212,
+                "startChar": 0,
+                "endLine": 213,
+                "endChar": 0
+              },
+              "replacement": "\tfilter :\u003d func(key []byte) bool { return bytes.HasSuffix(key, []byte(\"3\")) }\n"
+            }
+          ]
+        }
+      ],
+      "revId": "d5795f3c3defed640555c202d26b6cc105fda115",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
