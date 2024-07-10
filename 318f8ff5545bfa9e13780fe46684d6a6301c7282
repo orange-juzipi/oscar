@@ -109,6 +109,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ff4575d4_cc92b7d4",
+        "filename": "internal/commentfix/fix.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-10T18:24:21Z",
+      "side": 1,
+      "message": "I think a slog.DiscardHandler would be useful. (The machine is doing a lot of extra work here, not that it matters in this application.)\nThe proposal is https://github.com/golang/go/issues/62005, which is ready for review.",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 57
+      },
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ae741742_02248f8f",
         "filename": "internal/commentfix/fix.go",
         "patchSetId": 1
@@ -209,6 +232,47 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "e83635c1_61e233ca",
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e6619015_157ba21b",
+        "filename": "internal/commentfix/fix.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 252,
+      "author": {
+        "id": 14570
+      },
+      "writtenOn": "2024-07-10T18:24:21Z",
+      "side": 1,
+      "message": "issue",
+      "range": {
+        "startLine": 252,
+        "startChar": 15,
+        "endLine": 252,
+        "endChar": 21
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "db9f7c11_b5636202",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "internal/commentfix/fix.go",
+              "range": {
+                "startLine": 252,
+                "startChar": 0,
+                "endLine": 253,
+                "endChar": 0
+              },
+              "replacement": "// Run ignores issue texts and comments more than 30 days old.\n"
+            }
+          ]
+        }
+      ],
       "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
