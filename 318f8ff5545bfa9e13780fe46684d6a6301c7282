@@ -36,6 +36,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f7ec93a8_5fe4df64",
+        "filename": "internal/commentfix/fix.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:52:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "31df184b_f0d184fa",
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c47a6957_8d203830",
@@ -67,6 +85,24 @@
           ]
         }
       ],
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d417bf0_c50fe109",
+        "filename": "internal/commentfix/fix.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:52:41Z",
+      "side": 1,
+      "message": "This is not strictly true, and the doc comment for Run does explain EnableEdits, so I think I\u0027ll leave this out.",
+      "parentUuid": "c47a6957_8d203830",
       "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
@@ -106,6 +142,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bbcbb666_3d23a678",
+        "filename": "internal/commentfix/fix.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:52:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ae741742_02248f8f",
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e83635c1_61e233ca",
@@ -141,6 +195,24 @@
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f336481b_949d4850",
+        "filename": "internal/commentfix/fix.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 252,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:52:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e83635c1_61e233ca",
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2a5e89e0_7c1fd924",
@@ -154,6 +226,24 @@
       "writtenOn": "2024-07-09T15:53:07Z",
       "side": 1,
       "message": "Maybe I missed it but I don\u0027t see anything that uses this file.",
+      "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd3501c5_c77ed978",
+        "filename": "internal/commentfix/testdata/rsctmpfix.httprr",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:52:41Z",
+      "side": 1,
+      "message": "Indeed, deleted, thanks.",
+      "parentUuid": "2a5e89e0_7c1fd924",
       "revId": "318f8ff5545bfa9e13780fe46684d6a6301c7282",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
