@@ -16,6 +16,24 @@
       "message": "This file doesn\u0027t seem to use linkname.",
       "revId": "05b4f8349e2dc68c68c106f6c3572eaedbf60d29",
       "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e986553c_93224cb6",
+        "filename": "internal/gemini/gemini.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 5056
+      },
+      "writtenOn": "2024-07-10T17:36:29Z",
+      "side": 1,
+      "message": "Indeed. It did once, to get at protobuf.EnableDeterministicOutput or whatever the name is. But I changed it to use json.Compact and forgot to remove the import because gopls usually does that.",
+      "parentUuid": "dce885fd_72e732ff",
+      "revId": "05b4f8349e2dc68c68c106f6c3572eaedbf60d29",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
     }
   ]
 }
