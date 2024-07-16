@@ -73,3 +73,12 @@ func (v *Vector) Decode(enc []byte) {
 		*v = append(*v, math.Float32frombits(binary.BigEndian.Uint32(enc)))
 	}
 }
+
+// A Chatter implements a multi-message chat with a model.
+type Chatter interface {
+	// Chat asks the model for its next response in the
+	// conversation recorded in history.
+	// The chat history must contain an odd number of messages,
+	// which are interpreted as alternating user, model, user, model, ..., user.
+	Chat(ctx context.Context, history []string) (string, error)
+}

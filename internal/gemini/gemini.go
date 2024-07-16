@@ -131,3 +131,51 @@ func (c *Client) EmbedDocs(ctx context.Context, docs []llm.EmbedDoc) ([]llm.Vect
 	}
 	return vecs, nil
 }
+
+func (c *Client) Chat(ctx context.Context, history []string) (string, error) {
+	if len(history)%2 != 1 {
+		return "", fmt.Errorf("chat history has length %d (need odd length)", len(history))
+	}
+	chat := c.genai.GenerativeModel("gemini-1.5-pro").StartChat()
+	old, latest := history[:len(history)-1], history[len(history)-1]
+	for i, s := range old {
+		role := "user"
+		if i%2 == 1 {
+			role = "model"
+		}
+		chat.History = append(chat.History, &genai.Content{Role: role, Parts: []genai.Part{genai.Text(s)}})
+	}
+	resp, err := chat.SendMessage(ctx, genai.Text(latest))
+	if err != nil {
+		return "", err
+	}
+	for _, cand := range resp.Candidates {
+		if cand.FinishReason != genai.FinishReasonStop {
+			// Want a candidate that stopped at a natural stopping point.
+			c.slog.Info("gemini chat early stop", "history", history, "candidate", cand)
+			continue
+		}
+		if cand.Content == nil {
+			c.slog.Info("gemini chat missing content", "history", history, "candidate", cand)
+			continue
+		}
+		if len(cand.Content.Parts) != 1 {
+			// Want a single-part response. (Only asking for text so should be okay.)
+			c.slog.Info("gemini chat multipart response", "history", history, "candidate", cand)
+			continue
+		}
+		text, ok := cand.Content.Parts[0].(genai.Text)
+		if !ok {
+			c.slog.Info("gemini chat non-text response", "history", history, "candidate", cand)
+			continue
+		}
+		return string(text), nil
+	}
+	if len(resp.Candidates) == 0 {
+		c.slog.Info("gemini chat no candidates", "history", history, "response", resp)
+	} else {
+		c.slog.Info("gemini chat all candidates bad", "history", history)
+	}
+	return "", fmt.Errorf("gemini error")
+
+}
