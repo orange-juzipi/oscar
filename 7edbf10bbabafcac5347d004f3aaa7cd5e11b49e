@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "696902a6_418a61de",
+        "filename": "internal/gaby/main.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 5206
+      },
+      "writtenOn": "2024-07-17T19:57:42Z",
+      "side": 1,
+      "message": "Should be defined at the end of the comments with the other links.",
+      "revId": "7edbf10bbabafcac5347d004f3aaa7cd5e11b49e",
+      "serverId": "62eb7196-b449-3ce5-99f1-c037f21e1705"
+    }
+  ]
+}
