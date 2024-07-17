@@ -31,7 +31,8 @@
 // implementations of those interfaces.
 //
 // Another explicit goal for the Gaby code base is that it be very well tested.
-// (See my [Go Testing talk] for more about why this is so important.)
+// (See my [Go Testing talk](https://research.swtch.com/testing) for more about
+// why this is so important.)
 // Abstracting the various external functionality into interfaces also helps make
 // testing easier, and some packages also provide explicit testing support.
 //
@@ -213,7 +214,7 @@
 //
 // # Document Storage
 //
-// Various package take care of downloading state from issue trackers and the like,
+// Various packages take care of downloading state from issue trackers and the like,
 // but then all that state needs to be unified into a common document format that
 // can be indexed and searched. That document format is defined by
 // [golang.org/x/oscar/internal/docs]. A document consists of an ID (conventionally a URL),
